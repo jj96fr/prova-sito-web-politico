@@ -5,7 +5,17 @@ const Header = () => {
     return (
         <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
             <Container>
-                <Navbar.Brand href="#home">Nome Politico</Navbar.Brand>
+                {/* Inserisci il logo qui */}
+                <Navbar.Brand href="#home">
+                <img
+        src="/logo767.png" // Assicurati che questo sia il percorso corretto
+        height="50"
+        className="d-inline-block align-top"
+        alt="Logo del Partito"
+        style={{ backgroundColor: 'transparent' }} // Assicura trasparenza
+    />
+                    {' '}Nome del Partito
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
